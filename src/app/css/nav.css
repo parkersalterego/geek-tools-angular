@@ -1,0 +1,71 @@
+/* ham-menu */
+
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 25px;
+  left: 10px;
+  border: 1px solid #fff;
+  z-index: 2;
+
+}
+
+.ham-menu__bar {
+  height: 5px;
+  width: 48px;
+  margin-left: 1px;
+  background-color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  position:absolute;
+
+}
+
+.ham-menu__bar:nth-child(1) {
+  top:12.5px;
+
+}
+
+ .ham-menu__bar:nth-child(2) {
+  top:22.5px;
+
+}
+
+.ham-menu__bar:nth-child(3) {
+  top:32.5px;
+
+}
+
+
+/* nav bar */
+
+.nav-bar {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to bottom, #6e9165, #3C3B3F);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.nav-bar__ul {
+  margin-top: 40px;
+  color: #fff;
+  text-align: center;
+  font-family: 'anton', sans-serif;
+  font-size: 20px;
+
+}
+
+.nav-bar__ul--li {
+  display: inline;
+  cursor: pointer;
+  padding-right: 20px;
+
+}
+
+
+/*  animation */
+

@@ -1,0 +1,11 @@
+.faq {
+  height: 100vh;
+  background: linear-gradient(to bottom, #525252, #417abf);
+  z-index:0;
+
+}
+
+.faq__panels {
+  margin-top:300px;
+
+}
