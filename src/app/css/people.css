@@ -8,6 +8,7 @@
   height:100vh;
   background-color: #000;
   overflow: auto;
+  z-index: 0;
 }
 
 .people__nav::-webkit-scrollbar-track {
@@ -30,11 +31,21 @@
 
 }
 
-.people__nav--icon {
-  height: 100px;
+.people__nav--button {
+  margin-top: 150px;
+  height: 10vh;
   width:100%;
-  background-color: gray;
-  border: 1px solid #000;
+  background: linear-gradient(to bottom, #232526, #414345, #232526);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-text {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
 }
 
 .people__container {
@@ -42,6 +53,22 @@
   background-color: #fff;
 }
 
-.large-image-container {
+.people-container-image {
+  background-color: #fff;
+  position: relative;
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+  padding-top: 20%;
 
 }
+
+
+
+
+.image-container-large {
+
+
+}
+
+

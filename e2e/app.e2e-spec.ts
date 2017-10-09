@@ -1,14 +1,14 @@
-import { GeekToolsAngularPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('geek-tools-angular App', function() {
-  let page: GeekToolsAngularPage;
+describe('project-fix App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new GeekToolsAngularPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

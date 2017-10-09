@@ -7,10 +7,16 @@ import { FaqService } from '../services/faq.service';
   styleUrls: ['../css/faq.css']
 })
 export class FaqComponent {
-  faqs: any[];
+  answers: any[];
+  questions: any[];
   constructor(public faqService: FaqService) {
-    this.faqService.getFaqs().subscribe(faqs => {
-      this.faqs = faqs;
+    this.faqService.getQuestions().subscribe(questions => {
+      this.questions = questions;
+      console.log(questions);
+    });
+    this.faqService.getAnswers().subscribe(answers => {
+      this.answers = answers;
+      console.log(answers);
     });
   }
 }

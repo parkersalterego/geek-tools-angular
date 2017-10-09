@@ -7,8 +7,13 @@ export class FaqService {
   constructor(public http: Http) {
   }
 
-  getFaqs() {
-    return this.http.get('')
+  getQuestions() {
+    return this.http.get('http://localhost:3000/api/questions')
+      .map(res => res.json());
+  }
+
+  getAnswers() {
+    return this.http.get('http://localhost:3000/api/answers')
       .map(res => res.json());
   }
 }
