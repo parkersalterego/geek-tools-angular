@@ -1,5 +1,16 @@
-h1 {
-  margin-top:200px;
-  color:red;
+.header {
+  height: 100vh;
+  background-image:url('https://static.pexels.com/photos/574116/pexels-photo-574116.jpeg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+svg {
+  fill: #fff;
+}
+
+.gt-sub-text {
+  coolor:#fff;
 
 }

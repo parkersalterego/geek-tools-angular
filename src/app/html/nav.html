@@ -1,10 +1,4 @@
-
-<div class="ham-menu">
-  <div class="ham-menu__bar"></div>
-  <div class="ham-menu__bar"></div>
-  <div class="ham-menu__bar"></div>
-</div>
-<div class="nav-bar">
+<div class="nav-bar flex align-center justify-center">
   <ul class="nav-bar__ul">
     <li class="nav-bar__ul--li" *ngFor="let listItem of listItems" [routerLink]="listItem.url">{{listItem.name}}</li>
   </ul>

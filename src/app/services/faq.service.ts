@@ -7,8 +7,8 @@ export class FaqService {
   constructor(public http: Http) {
   }
 
-  getFaqs() {
-    return this.http.get('')
+  getFaq() {
+    return this.http.get('http://localhost:3000/api/questions')
       .map(res => res.json());
   }
 }

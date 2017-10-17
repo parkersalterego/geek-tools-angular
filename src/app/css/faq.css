@@ -5,7 +5,22 @@
 
 }
 
-.faq__panels {
-  margin-top:300px;
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  color: #fff;
+  background-color: #1D1C28;
+  border-color: #000;
 
 }
+
+.panel-default>.panel-heading {
+  color: #fff;
+  background-color: #1D1C28;
+  border-color: #000;
+}
+
+.title {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+

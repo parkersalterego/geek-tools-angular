@@ -3,6 +3,8 @@
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 
 /* stylings */
@@ -22,4 +24,128 @@ html, body {
 
 }
 
+.full-vh{
+  height:100vh;
+}
 
+.half-vh {
+  height: 50vh;
+}
+
+.display-block{
+  display:block;
+}
+
+.display-inline-block{
+  display:inline-block;
+}
+
+.display-none{
+  display:none;
+}
+
+.margin-null{
+  margin:0;
+}
+
+.padding-null{
+  padding:0;
+}
+
+.fill{
+  height:100%;
+  width:100%;
+}
+
+.flex {
+  display:flex;
+}
+
+.flex-row{
+  flex-direction:row;
+}
+
+.flex-column{
+  flex-direction:column;
+}
+
+.justify-start{
+  justify-content:flex-start
+}
+
+.justify-end{
+  justify-content:flex-end;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-space-around{
+  justify-content:space-around;
+}
+
+.justify-space-between{
+  justify-content:space-between;
+}
+
+.align-start {
+  align-items:flex-start;
+}
+
+.align-end {
+  align-items:flex-end;
+}
+
+.align-center {
+  align-items:center;
+}
+
+.align-space-around {
+  align-items:space-around;
+}
+
+.align-space-between {
+  align-items:space-between;
+}
+
+.position-relative{
+  position:relative;
+}
+
+.position-fixed{
+  position:fixed;
+}
+
+.position-absolute{
+  position:absolute;
+}
+
+.top-0{
+  top:0px;
+}
+
+.bottom-0{
+  bottom:0px;
+}
+
+.left-0{
+  left:0px;
+}
+
+.right-0{
+  right:0px;
+}
+
+.img-fill {
+  background-size:cover;
+  background-position:center;
+}
+
+.attatchment-fixed {
+  background-attachment: fixed;
+}
+
+.hidden{
+  visibility:hidden;
+}
