@@ -5,6 +5,9 @@ import { HomeComponent } from '../components/home.component';
 import { FaqComponent } from '../components/faq.component';
 import { PeopleComponent } from '../components/people.component';
 import { CodeComponent } from '../components/code.component';
+import { HtmlComponent } from '../components/html.component';
+import { CssComponent } from '../components/css.component';
+import { ExamplesComponent } from '../components/examples.component';
 
 const routes: Routes = [
   {
@@ -24,12 +27,24 @@ const routes: Routes = [
     component: CodeComponent
   },
   {
+  path: 'code/html',
+  component: HtmlComponent
+  },
+  {
     path: '**',
     component: HomeComponent
   }
 ];
 
-export const routedComponents = [HomeComponent, FaqComponent, PeopleComponent, CodeComponent];
+export const routedComponents = [
+  HomeComponent,
+  FaqComponent,
+  PeopleComponent,
+  CodeComponent,
+  HtmlComponent,
+  CssComponent,
+  ExamplesComponent
+];
 
 @NgModule({
   imports: [
