@@ -10,8 +10,6 @@ import { NavComponent } from './components/nav.component';
 
 import { FaqService } from './services/faq.service';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

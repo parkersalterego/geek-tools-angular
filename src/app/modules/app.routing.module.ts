@@ -31,6 +31,14 @@ const routes: Routes = [
   component: HtmlComponent
   },
   {
+    path: 'code/css',
+    component: CssComponent
+  },
+  {
+    path: 'code/examples',
+    component: ExamplesComponent
+  },
+  {
     path: '**',
     component: HomeComponent
   }

@@ -15,3 +15,7 @@
   background: linear-gradient(to bottom, #0F4C5C, #821818);
 }
 
+.third-vh {
+  height: calc(100vh/3);
+}
+
