@@ -10,16 +10,9 @@ export class FaqComponent {
   answers: any[];
   questions: any[];
   constructor(public faqService: FaqService) {
-    this.faqService.getQuestions().subscribe(questions => {
+    this.faqService.getFaq().subscribe(questions => {
       this.questions = questions;
       console.log(questions);
     });
-    this.faqService.getAnswers().subscribe(answers => {
-      this.answers = answers;
-      console.log(answers);
-    });
   }
 }
-
-
-

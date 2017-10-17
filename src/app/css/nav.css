@@ -1,78 +1,36 @@
-/* ham-menu */
-
-.ham-menu {
-  height: 50px;
-  width: 50px;
-  position: fixed;
-  top: 25px;
-  left: 10px;
-  border: 1px solid #fff;
-  z-index: 2;
-
-}
-
-.ham-menu__bar {
-  height: 5px;
-  width: 48px;
-  margin-left: 1px;
-  background-color: #fff;
-  border-radius: 5px 5px 5px 5px;
-  position:absolute;
-
-}
-
-
-.ham-menu__bar:nth-child(1) {
-  top:12.5px;
-
-}
-
- .ham-menu__bar:nth-child(2) {
-  top:22.5px;
-
-}
-
-.ham-menu__bar:nth-child(3) {
-  top:32.5px;
-
-}
-
-
-/* nav bar */
+/* start nav bar */
 
 .nav-bar {
-  height: 100px;
+  height: 10vh;
   width: 100%;
-  background: linear-gradient(to bottom, #414345, #232526);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 
 }
 
 .nav-bar__ul {
-  margin-top: 40px;
   color: #fff;
-  text-align: center;
-  float:right;
+  font-size: 1.35em;
   font-family: 'anton', sans-serif;
-  font-size: 20px;
+  padding: 0;
+  margin: 0;
 
 }
 
 .nav-bar__ul--li {
   display: inline;
-  cursor: pointer;
-  margin-right: 20px;
+  margin-right: 1em;
 
 }
 
 .nav-bar__ul--li:hover {
+  cursor: pointer;
   border-bottom: 3px solid #fff;
 
 }
 
-
-/*  animation */
+/* end nav bar */
 
