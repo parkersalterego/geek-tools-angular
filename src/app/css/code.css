@@ -1,21 +1,29 @@
 .text {
   text-align: center;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 5px;
   color: #fff;
   font-size:50px;
-  text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, .8);
 
 }
 
-.text:hover {
+.container:hover {
   cursor: pointer;
+
 }
 
 .bg {
   background: linear-gradient(to bottom, #0F4C5C, #821818);
+
 }
 
-.third-vh {
-  height: calc(100vh/3);
+.container {
+  height: calc(100vh / 3);
+  width: 100vw;
+  border-bottom: 3px solid #fff;
+  background-color: rgba(255, 255, 255, .25);
+  box-shadow: 5px 5px 5px 0px rgba(50, 50, 50, 0.8);
+
 }
 

@@ -1,7 +1,5 @@
 .main-bg {
-  background-image: url('../../assets/img/blue-blur.jpg');
-  background-size:cover;
-  background-position: center;
+  background: linear-gradient(to bottom, #0DAB76, #C9B310);
 }
 
 .top-container {

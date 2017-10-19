@@ -4,26 +4,21 @@
 
       <h2 class="title">Frequently Asked Questions</h2>
 
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" *ngFor="let faq of faqs">
         <div class="panel panel-default">
           <div class="panel-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What is a div?
+                {{faq.question}}
               </a>
             </h4>
           </div>
           <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
-                The div tag is nothing more than a container unit that encapsulates other page elements and divides the HTML document into sections. Web developers use div elements to group together HTML elements and apply CSS styles to many elements at once. For instance, by wrapping a set of paragraph elements into a div element, the developer can take advantage of CSS styles and apply a font to all paragraphs at once by applying a font style to the div tag instead of coding the same style for each paragraph element.
+              {{faq.answer}}
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</div>
 
 <script src='../js/faq.js'></script>
