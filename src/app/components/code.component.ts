@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-code',
   templateUrl: '../html/code.html',

@@ -1,6 +1,6 @@
 .faq {
   height: 100vh;
-  background: linear-gradient(to bottom, #525252, #417abf);
+  /* background: linear-gradient(to bottom, #525252, #417abf); */
   z-index:0;
 
 }
@@ -9,6 +9,8 @@
   color: #fff;
   background-color: #1D1C28;
   border-color: #000;
+  text-align: center;
+  font-family: 'comfortaa', sans-serif;
 
 }
 
@@ -16,11 +18,18 @@
   color: #fff;
   background-color: #1D1C28;
   border-color: #000;
+  text-align: center;
+  font-family: 'comfortaa', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .title {
   font-size: 30px;
+  font-family: 'comfortaa', sans-serif;
   color: #fff;
   text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 

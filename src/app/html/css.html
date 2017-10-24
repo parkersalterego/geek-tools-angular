@@ -1,1 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 css">
 
+        <h2 class="header">CSS3</h2>
+        <img src="" alt="">
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+
+            <div *ngFor="let html of htmls; let i = index">
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse"
+                      data-parent="#accordion" href="{{returnTarget(i)}}" aria-expanded="true" aria-controls="collapse1">
+                      <h2 class="title-text">{{html.name}}</h2>
+                    </a>
+                  </h4>
+                </div>
+                <div id="{{returnId(i)}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <h2 class="panel-text">{{html.explanation}}</h2>
+                    <h2 class="panel-text">{{html.example.one}}</h2>
+                    <h2 class="panel-text">{{html.example.two}}</h2>
+                    <h2 class="panel-text">{{html.references}}</h2>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+        </div>

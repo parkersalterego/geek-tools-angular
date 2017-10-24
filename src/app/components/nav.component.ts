@@ -31,7 +31,7 @@ export class NavComponent {
       {
         name: 'HTML / CSS',
         url: '/code'
-      }
+      },
     ];
   }
 }

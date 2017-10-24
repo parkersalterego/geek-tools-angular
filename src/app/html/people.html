@@ -1,48 +1,95 @@
 <div class="container-fluid">
+  <div class="row upper-bg">
+    <div class="col-xs-12 upper-container flex flex-row justify-space-around align-center">
+      <span class="icon glyphicon glyphicon-chevron-left" (click)="previousProfile()"></span>
+      <div class="profile-image">
+        <img src="" alt="">
+      </div>
+      <span class="icon glyphicon glyphicon-chevron-right" (click)="nextProfile()"></span>
+    </div>
+    <div class="col-xs-12 title-container">
+      <h2 class="name">{{people[0].name}}</h2> -->
+      <h2 class="name">{{people[count].position}}</h2>
+    </div>
+  </div>
   <div class="row">
-    <div class="col-xs-12 main-bg full-vh zero-margin-padding">
-      <div class="col-xs-12 top-container flex flex-column align-center justify-center">
-        <div class="top-circle">
-          <img class="circle-img-top" src="" alt="Irma Olguin">
+    <div class="col-xs-12 lower-container">
+
+      <br>
+
+      <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Skillset: </h2>
         </div>
-        <h3 class="top-name">{{people[0].name}}</h3>
+        <div class="col-xs-8">
+          <h2 class="data">{{people[count].skillset}}</h2>
+        </div>
       </div>
-      <div class="col-xs-12 bottom-container">
-        <h2>{{people[0].position}}</h2>
-        <h2>{{people[0].skillset}}</h2>
-        <h2>{{people[0].languages}}</h2>
-        <h2>{{people[0].mantra}}</h2>
-        <h2>{{people[0].email}}</h2>
-        <h2>{{people[0].slackname}}</h2>
-        <h2>{{people[0].likes}}</h2>
-        <h2>{{people[0].dislikes}}</h2>
-        <h2>{{people[0].interests}}</h2>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- menu -->
 
-<div class="menu-container">
-  <div class="menu-item" *ngFor="let person of people">
-    <div class="img-container flex justify-center align-center">
-      <div class="menu-circle zero-margin-padding">
-          <img class="circle-img-menu" src="http://bitwiseindustries.com/wp-content/uploads/2015/09/irma-leadership.jpg" alt="Irma Olguin">
+    <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Languages: </h2>
+        </div>
+        <div class="col-xs-8">
+         <h2 class="data">{{people[count].languages}}</h2>
+        </div>
       </div>
-    </div>
-    <div class="name-container flex justify-flex-start align-center">
-      <h3 class="menu-name zero-margin-padding">{{people.name}}</h3>
-    </div>
-  </div>
-  <div class="menu-item">
-    <div class="img-container flex justify-center align-center">
-      <div class="menu-circle zero-margin-padding">
-          <img class="circle-img-menu" src="http://bitwiseindustries.com/wp-content/uploads/2015/09/jake-leadership.jpg" alt="Irma Olguin">
+
+    <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Mantra: </h2>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="data">{{people[count].mantra}}</h2>
+        </div>
       </div>
-    </div>
-    <div class="name-container flex justify-flex-start align-center">
-      <h3 class="menu-name zero-margin-padding">Jake Soberal</h3>
+
+    <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Likes: </h2>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="data">{{people[count].likes}}</h2>
+        </div>
+      </div>
+
+    <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Dislikes: </h2>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="data">{{people[count].dislikes}}</h2>
+        </div>
+      </div>
+
+    <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Interests: </h2>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="data">{{people[count].interests}}</h2>
+        </div>
+      </div>
+
+    <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Email: </h2>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="data">{{people[count].email}}</h2>
+        </div>
+      </div>
+
+    <div class="col-xs-12">
+        <div class="col-xs-4 category-container">
+          <h2 class="category" >Slack: </h2>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="data">{{people[count].slackname}}</h2>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

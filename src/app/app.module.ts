@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav.component';
 
 import { FaqService } from './services/faq.service';
+import { PeopleService } from './services/people.service';
+import { ExamplesService } from './services/examples.service';
+import { CodeService } from './services/code.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,7 @@ import { FaqService } from './services/faq.service';
     BrowserAnimationsModule
 
   ],
-  providers: [FaqService],
+  providers: [FaqService, PeopleService, ExamplesService, CodeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

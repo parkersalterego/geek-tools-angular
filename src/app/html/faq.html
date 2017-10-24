@@ -4,21 +4,27 @@
 
       <h2 class="title">Frequently Asked Questions</h2>
 
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" *ngFor="let faq of faqs">
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingOne">
-            <h4 class="panel-title">
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                {{faq.question}}
-              </a>
-            </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-              {{faq.answer}}
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" >
+
+        <div *ngFor="let faq of faqs; let i = index">
+
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse"
+                  data-parent="#accordion" href="{{returnTarget(i)}}" aria-expanded="true" aria-controls="collapse1">
+                  {{faq.question}}
+                </a>
+              </h4>
+            </div>
+
+            <div id="{{returnId(i)}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                {{faq.answer}}
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-<script src='../js/faq.js'></script>
+        </div>
+
+      </div>
