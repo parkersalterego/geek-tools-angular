@@ -1,14 +1,14 @@
-<div class="container-fluid">
+<div class="container-fluid" *ngIf="people && people.length">
   <div class="row upper-bg">
     <div class="col-xs-12 upper-container flex flex-row justify-space-around align-center">
       <span class="icon glyphicon glyphicon-chevron-left" (click)="previousProfile()"></span>
       <div class="profile-image">
-        <img src="" alt="">
+        <img class="image" src="{{people[count].img}}" alt="">
       </div>
       <span class="icon glyphicon glyphicon-chevron-right" (click)="nextProfile()"></span>
     </div>
     <div class="col-xs-12 title-container">
-      <h2 class="name">{{people[0].name}}</h2> -->
+      <h2 class="name">{{people[count].name}}</h2>
       <h2 class="name">{{people[count].position}}</h2>
     </div>
   </div>
