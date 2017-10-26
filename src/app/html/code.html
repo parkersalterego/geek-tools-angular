@@ -1,12 +1,15 @@
-<div class="container-fluid">
+<div class="container-fluid bg">
   <div class="row">
-    <div class="col-xs-12 full-vh">
-      <div class="col-xs-12 half-vh">
-        <h1 class="text">HTML5</h1>
-      </div>
-      <div class="col-xs-12 half-vh">
-        <h1 class="text">CSS3</h1>
-      </div>
+    <div class="col-xs-12 custom-vh flex flex-column justify-space-between align-center zero-margin-padding">
+        <div class="container flex justify-center align-center" [routerLink]="htmlRoute">
+            <h1 class="text">HTML5</h1>
+        </div>
+<div class="container flex justify-center align-center" [routerLink]="cssRoute">
+          <h1 class="text">CSS3</h1>
+        </div>
+<div class="container flex justify-center align-center" [routerLink]="examplesRoute">
+            <h1 class="text">Examples</h1>
+          </div>
     </div>
   </div>
 </div>

@@ -8,7 +8,7 @@ export class FaqService {
   }
 
   getFaq() {
-    return this.http.get('http://localhost:3000/api/questions')
+    return this.http.get('http://localhost:3000/faq')
       .map(res => res.json());
   }
 }

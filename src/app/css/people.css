@@ -1,95 +1,72 @@
-.main-bg {
-  background-image: url('../../assets/img/blue-blur.jpg');
-  background-size:cover;
+.upper-bg {
+  background-image: url('../../assets/img/Downtown_Fresno_Skyline.jpg');
+  background-size: cover;
   background-position: center;
 }
 
-.top-container {
-  height: calc(100vh / 3);
-
+.upper-container {
+  height: 30vh;
+  background-color: rgba(255, 255, 255, .25);
 }
 
-.top-circle {
-  height: 22.5vh;
-  width: 22.5vh;
+.icon {
+  color:white;
+  font-size: 32px;
+}
+
+.icon:hover {
+  cursor:pointer;
+}
+
+.profile-image {
+  height:175px;
+  width:175px;
   border-radius: 50%;
-  background-color: blue;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: #fff;
+}
 
+.title-container {
+  height:10vh;
+  /* background-color: blue; */
+  color: #fff;
+  font-family: 'comfortaa', sans-serif;
+  background-color: rgba(255, 255, 255, .25);
 
 }
 
-.circle-img-top {
-  height:22.5vh;
-  width: 22.5vh;
-  border-radius:50%;
-}
-
-.top-name {
-  color: white;
+.name {
   font-size: 20px;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
-  font-family: 'Comfortaa', sans-serif;
+  text-align:center;
 
 }
 
-.bottom-container {
-  height: calc((100vh / 3) * 2);
+.lower-container {
+  height: 50vh;
+  /* background: linear-gradient( to bottom, #000000, #434343); */
+}
+
+.category, .data {
+  color: #fff;
+  font-family: 'comfortaa', sans-serif;
+}
+
+.category-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
 }
 
-/* menu */
-
-.menu-container {
-  height:100vh;
-  width:100vw;
-  background-color:rgba(0, 0, 0, 0.85);
-  position:absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+.category {
+  font-size: 20px;
 }
 
-.menu-item {
-  height:20vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
-
+.data {
+  font-size: 16px;
 }
 
-.img-container {
-  height:100%;
-  width: 20vh;
-  float: left;
-}
-
-.menu-circle {
-  height: 18vh;
-  width: 18vh;
+.image {
   border-radius: 50%;
-  background-color: blue;
-
+  height:175px;
+  width:175px;
 }
-
-.circle-img-menu {
-  height:18vh;
-  width: 18vh;
-  border-radius:50%;
-}
-
-.name-container {
-  height: 100%;
-  width:64.25vw;
-  float: left;
-}
-
-.menu-name {
-  text-align: center;
-  color:#fff;
-  font-size:30px;
-  margin-left: 20px;
-}
-
-
