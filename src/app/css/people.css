@@ -37,6 +37,7 @@
 .name {
   font-size: 20px;
   text-align:center;
+  overflow-wrap: break-word;
 
 }
 
@@ -48,6 +49,7 @@
 .category, .data {
   color: #fff;
   font-family: 'comfortaa', sans-serif;
+  overflow-wrap: break-word;
 }
 
 .category-container {
@@ -59,14 +61,59 @@
 
 .category {
   font-size: 20px;
+  overflow-wrap: break-word;
 }
 
 .data {
   font-size: 16px;
+  overflow-wrap: break-word;
 }
 
 .image {
   border-radius: 50%;
-  height:175px;
-  width:175px;
+  height:250px;
+  width:250px;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .lower-container {
+    margin-left:5px;
+    padding:0;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .image {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media only screen and (max-height: 825px) {
+  .image {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-height: 675px) {
+  .image {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media only screen and (max-height: 585px) {
+  .image {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .lower-sub-container {
+    margin-left: 5px;
+    padding: 0;
+  }
 }

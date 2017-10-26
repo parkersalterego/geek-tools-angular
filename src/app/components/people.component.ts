@@ -14,7 +14,7 @@ export class PeopleComponent {
   public count = 0;
 
   public nextProfile() {
-    if (this.count === this.people.length) {
+    if (this.count === this.people.length - 1) {
       this.count = 0;
     } else {
       this.count = this.count + 1;
@@ -23,7 +23,7 @@ export class PeopleComponent {
 
   public previousProfile() {
     if (this.count === 0 ) {
-      this.count = this.people.length;
+      this.count = this.people.length - 1;
     } else {
       this.count = this.count - 1;
     }
