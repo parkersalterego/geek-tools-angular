@@ -8,11 +8,19 @@ import { CodeService } from '../services/code.service';
 })
 export class CssComponent {
 
-  public code: any[] = [];
+  public codes: any[] = [];
+
+  returnTarget(index: number) {
+    return '#collapse' + (index + 1);
+  }
+
+  returnId(index: number) {
+    return 'collapse' + (index + 1);
+  }
 
   constructor(public codeService: CodeService) {
-    this.codeService.getCode().subscribe(code => {
-      this.code = code;
+    this.codeService.getCss().subscribe(code => {
+      this.codes = code;
       console.log(code);
     });
   }

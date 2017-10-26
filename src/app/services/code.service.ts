@@ -7,8 +7,13 @@ export class CodeService {
   constructor(public http: Http) {
   }
 
-  getCode() {
-    return this.http.get('http://localhost:3000/code')
+  getHtml() {
+    return this.http.get('http://localhost:3000/code/html')
+      .map(res => res.json());
+  }
+
+  getCss() {
+    return this.http.get('http://localhost:3000/code/css')
       .map(res => res.json());
   }
 }
